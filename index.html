@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>絶品のお米とおかずの話</title>
+<meta name="keywords" content="六方銀米,梅干し田舎漬,二段仕込み明太子,本鷹なめたけ,竹の子なめたけ,助次さんのコシヒカリ">
+<meta name="description" content="絶品のお米とおかずの紹介">
+<link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+<link href="css/smart.css" media="all" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css
+3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<link rel="stylesheet" type="text/css" href="css/old-ie.css" media="screen">
+<![endif]-->
+
+<script>
+$(document).ready(function() {
+  var pagetop = $('#anchor_link');
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+       } else {
+            pagetop.fadeOut();
+            }
+       });
+       pagetop.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 800; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+
+<script>
+$(function() {
+  var h = $(window).height();
+
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(2400).fadeOut(2200);
+  $('#loader').delay(2200).fadeOut(2000);
+  $('#wrap').css('display', 'block');
+});
+
+
+//4秒たったら強制的にロード画面を非表示
+$(function(){
+  setTimeout('stopload()',14000);
+});
+
+function stopload(){
+  $('#loader-bg').delay(2400).fadeOut(2200);
+  $('#loader').delay(2200).fadeOut(2000);
+  $('#wrap').css('display', 'block');
+}
+</script>
+
+
+</head>
+
+<body>
+
+<div id="loader-bg">
+  <div id="loader">
+    <img src="img/loading.gif" alt="Now Loading..." />
+    <p>Now Loading...</p>
+  </div>
+</div>
+
+<div id="wrap">
+	<header>
+		<div class="viewer">
+            <ul>
+            <li><img src="img/top1.png" alt=""></li>
+            <li><img src="img/top2.png" alt=""></li>
+            <li><img src="img/top3.png" alt=""></li>
+            <li><img src="img/top4.png" alt=""></li>
+            </ul>
+		</div>
+    	<div id="menu01">
+            <ul id="gNavi1">
+                <li><a href="#roppouginmai"><img src="img/nav01.png" alt="お米屋さん推薦の味"></a></li>
+                <li><a href="#okazu"><img src="img/nav02.png" alt="ご飯に合うおかず"></a></li>
+            </ul>
+        </div>
+        <div id="menu02">
+        	<ul id="gNavi2">
+        		<li><a href="#sanchi"><img src="img/nav03.png" alt="産地のこと"></a></li>
+        		<li><a href="#ranking"><img src="img/nav04.png" alt="人気のお米ランキング"></a></li>
+        	</ul>
+        </div>
+	</header>
+
+	<div id="roppouginmai">
+	<h1>お米屋さん推薦の味</h1><h2>豊岡市のブランド米 六方銀米</h2>
+	<div id="roppouginmai-left">
+	<p>全国農業コンクール農林水産大臣賞受賞を受賞した兵庫県豊岡市中谷の米農家が丹精込めて栽培したブランド米「六方銀米」は、ツヤツヤの炊き上がりと、通常のコシヒカリよりも強い粘りが特徴です。</p><img src="img/okomeyasan2.png" alt="六方銀米">
+	</div>
+	<div id="roppouginmai-right">
+	<img src="img/okomeyasan1.png" alt="六方銀米">
+	<p>香りもよく、粒もしっかりと揃ったお米はどんな料理とも相性抜群です。冷めた状態でも風味は落ちませんので、おにぎりやお弁当にも最適です。</p>
+	</div>
+	</div>
+
+	<div id="sanchi">
+	<div class="none">
+	<h1>知ってほしい</h1><h2>産地のこと</h2>
+	</div>
+	<img src="img/sanchi1.png" alt="知ってほしい産地のこと">
+	<div class="none">
+	<p>現在、豊岡市は生物多様性を視野に入れた減農薬米の取り組みが全国一進んでおり、環境に配慮した田んぼには、毎日のようにコウノトリが舞い降ります。<br>
+	一級河川の円山川沿いの土壌はお米作りに最適な重粘土質。良質な水と気候、人も動物も住みやすい自然環境で栽培された六方銀米は安心と作り手のまごころが込められています。</p>
+	</div>
+	</div>
+	<div id="sanchi2">
+	<img src="img/sanchi2.png" alt="兵庫県豊岡市中谷">
+	<img src="img/sanchi3.png" alt="兵庫県豊岡市中谷">
+	<img src="img/sanchi4.png" alt="兵庫県豊岡市中谷">
+	</div>
+
+	<div id="okazu">
+		<div class="none">
+		<h1>箸が止まらない</h1><h2>ご飯に合うおかず</h2>
+		</div>
+		<img src="img/okazu.png" alt="箸が止まらないご飯に合うおかず">
+	</div>
+
+	<div id="umeboshi">
+		<div class="none">
+		<h1>４０年以上愛されるロングセラー</h1><p>紀州産南高梅梅ぼし田舎漬</p>
+		</div>
+        <div id="umeboshi-top">
+		<img src="img/ume1.png" alt="梅干し田舎漬">
+		</div>
+		<div id="umeboshi_contents01">
+    		<p class="umeboshi_contents01_txt">
+            	<span>梅</span>ぼし田舎漬は、か<br>つお節の旨味でまろ<br>やかに仕上げた梅干<br>しです。<br>桃のような甘いフ<br>ルーティーな香りの<br>南高梅の柔らかい薄<br>皮と肉厚でとろっと<br>した果肉をご堪能<br>下さい。
+    		</p>
+    		<div class="umeboshi_contents01_img">
+            	<img src="img/ume2.png" alt="梅干し田舎漬">
+            </div>
+        </div>
+		<div id="umeboshi_contents02">
+        	<div class="umeboshi_contents02_img">
+                <a href="http://px.a8.net/svt/ejp?a8mat=2NDO5V+9LBFN6+3C82+5ZU29" target="_blank">
+                <img border="0" alt="" src="http://www23.a8.net/svt/bgt?aid= 160201363580&wid=001&eno=01&mid=s00000015581001007000&mc=1"></a>
+                <img border="0" width="1" height="1" src="http://www16.a8.net/0.gif?a8mat=2NDO5V+9LBFN6+3C82+5ZU29" alt="">
+            </div>
+            <p class="umeboshi_contents02_txt">
+                ４０年以上愛され続<br>け２０１４年度シリー<br>ズ累計１３，０００<br>０個を売り上げまし<br>た。<br>ご自宅用はもちろん<br>大切な先様にお<br>届けするギフトとし<br>てもおすすめです。
+            </p>
+		</div>
+	</div>
+	<div id="mentaiko">
+		<div class="none">
+		<h1>伝統の老舗が作る格別の味</h1><p>博多直送二段仕込み明太子</p>
+		</div>
+		<div id="mentaiko-top">
+        <img src="img/mentaiko1.png" alt="二段仕込み明太子">
+		</div>
+		<div id="mentaiko_contents01">
+        	<div class="mentaiko_contents01_img">
+                <img src="img/mentaiko3.png" alt="二段仕込み明太子">
+            </div>
+            <p class="mentaiko_contents01_txt"><span>博</span>多の老舗「徳永」<br>は、実に創業５０余<br>年。大量生産に向か<br>ない手作業での明太<br>子づくリにこだわリ<br>続けています。極上<br>のプリプリとした食<br>感は徳永だからなの<br>です。</p>
+		</div>
+
+		<div id="mentaiko_contents02">
+        	<div class="mentaiko_contents02_img">
+                <a href="http://px.a8.net/svt/ejp?a8mat=2NDPQ7+XCANM+2EAY+1ZHILT" target="_blank">
+                <img border="0" alt="" src="http://www29.a8.net/svt/bgt?aid= 160203391056&wid=001&eno=01&mid=s00000011185012007000&mc=1"></a>
+                <img border="0" width="1" height="1" src="http://www14.a8.net/0.gif?a8mat=2NDPQ7+XCANM+2EAY+1ZHILT" alt="">
+            </div>
+    		<p class="mentaiko_contents02_txt">量産品とは一線を<br>画す、味わい深い辛<br>子明太子は最初に<br>甘さ、次に辛さ、最<br>後にまろやかなかつ<br>お風味がフワッと香<br>るたとえようのない<br>逸品をお届けしま<br>す。</p>
+        </div>
+	</div>
+
+	<div id="nametake">
+		<div class="none">
+		<h1>香川県三豊市産の食味豊かななめたけ</h1><p>食卓を彩る美味しいもの<br>本鷹なめたけ/竹の子なめたけ</p>
+		</div>
+        <div id="nametake-top">
+		<img src="img/nametake1.png" alt="本鷹なめたけ 竹の子なめたけ">
+		</div>
+		<div id="nametake_contents01">
+        	<div class="nametake_contents01_img">
+            	<img src="img/nametake3.png" alt="本鷹なめたけ 竹の子なめたけ">
+        	</div>
+    		<p class="nametake_contents01_txt">
+            	<span>竹</span>の子なめたけは地<br>元は三豊市で穫れた<br>良質な若竹の子のえ<br>ぐみの少ない心地よ<br>い歯ごたえと、なめ<br>たけのシャキシャキ<br>とした食感が楽しい<br>豊かな味わいです。
+            </p>
+        </div>
+    	<div id="nametake_contents02">
+        	<div class="nametake_contents02_img">
+                <img src="img/nametake5.png" alt="本鷹なめたけ 竹の子なめたけ">
+            </div>
+            <p class="nametake_contents02_txt">
+                <span>本</span>鷹なめたけとは<br>幻のトウガラシと呼<br>ばれる香川本鷹をえ<br>のき茸と丁寧に炊き<br>上げたものです。ご<br>飯のお供はもちろん、<br>酒の肴としてもご堪<br>能いただけます。
+            </p>
+        </div>
+        <div id="nametake_contents03">
+        	<p class="nametake_contents03_txt">
+                鮮度にこだわリ、朝<br>ごと仕入れる大粒え<br>のき茸を使用してい<br>ます。全ての材料を<br>地元・三豊市にて仕<br>入れたミトョフーズ<br>のこだわりの品々で<br>す。
+            </p>
+        	<div class="nametake_contents03_img">
+                <a href="http://px.a8.net/svt/ejp?a8mat=2NDPQ7+4LIIYA+1XGK+9LG4M9" target="_blank">
+                <img border="0" alt="" src="http://www28.a8.net/svt/bgt?aid= 160203391278&wid=001&eno=01&mid=s00000009002058022000&mc=1"></a>
+                <img border="0" width="1" height="1" src="http://www11.a8.net/0.gif?a8mat=2NDPQ7+4LIIYA+1XGK+9LG4M9" alt="">
+            </div>
+        </div>
+	</div>
+
+	<div id="ranking">
+		<div id="rankingtop">
+		<img src="img/ranking1.png" alt="人気のお米ランキング">
+		</div>
+		<div id="ranking1">
+		<img src="img/ranking2.png" alt="コウノトリ舞い降りるコシヒカリ六方銀米白米5kg">
+		<a href="http://nakanotani.com/haku5.php"><img src="img/buy.png"></a>
+		<h2 class="ranking1">コウノトリ舞い降りるコシヒカリ六方銀米白米5kg</h2>
+		<p class="ranking1">絶滅危惧種であるコウノトリと一緒に暮らせる安全安心な環境で育てられた六方銀米。
+		綺麗でピカピカもちもち、冷めても美味しい驚く程粘りのある白米5kgが一番人気です。</p>
+		<ul class="ranking1">
+		<li>減農薬特別栽培米コシヒカリ</li>
+		<li>六方銀米白米5kg</li>
+		<li>・兵庫県安心ブランド農産物認証取得</li>
+		<li>・豊岡市コウノトリの舞ブランド認証取得</li>
+		<li>・白米5kgお試し用にピッタリ</li>
+		<li><font color="#993333"> 販売価格5kg：税込2,880円</font></li>
+		</ul>
+		</div>
+
+		<div id="ranking2">
+		<img src="img/ranking3.png" alt="コウノトリ舞い降りるコシヒカリ六方銀米玄米5kg">
+		<a href="http://nakanotani.com/gen5.php"><img src="img/buy.png"></a>
+		<h2 class="ranking2">コウノトリ舞い降りるコシヒカリ六方銀米玄米5kg</h2>
+		<p class="ranking2">六方銀米は玄米食の皆さんからも、他と比べて綺麗でふっくら良く炊ける、とのこと。
+		玄米はビタミン、ミネラルが濃縮され、食物繊維、ビタミンB1、ビタミンB2、ビタミンEを多く含みます。毎日玄米食のマクロビファンも多いお米です。</p>
+		<ul class="ranking2">
+		<li>減農薬特別栽培米コシヒカリ</li>
+		<li>六方銀米玄米5kg</li>
+		<li>・兵庫県安心ブランド農産物認証取得</li>
+		<li>・豊岡市コウノトリの舞ブランド認証取得</li>
+		<li>・玄米5kgお試し用にピッタリ</li>
+		<li><font color="#993333">販売価格5kg：税込2,670円</font></li>
+		</ul>
+		</div>
+
+		<div id="ranking3">
+		<img src="img/ranking4.png" alt="助次さんのコシヒカリ　白米5kg"><a href="http://px.a8.net/svt/ejp?a8mat=2NDO5U+6F07HU+2EAY+ZS5GI"><img src="img/buy.png"></a>
+		<h2 class="ranking3">助次さんのコシヒカリ　白米5kg</h2>
+		<p class="ranking3">お米日本一コンテストで日本一に輝いた山形県真室川町の阿部助次さんのお米です。
+		阿部さんのお米の一番の特徴はその一粒一粒から醸し出される力強い美味しさです。</p>
+		<ul class="ranking3">
+		<li>減農薬特別栽培米</li>
+		<li>助次さんのコシヒカリ 白米5kg</li>
+		<li>・100％助次さんが作ったお米だけをお届けします。</li>
+		<li>・精米したての状態でお届けします。</li>
+		<li>・白米5kgお試し用にピッタリ</li>
+		<li><font color="#993333">販売価格5kg：税込4,828円</font></li>
+		</ul>
+		</div>
+	</div>
+    <div id="anchor_link">
+    <a href="#top"><img src="img/return.png"></a>
+    </div>
+    <footer>
+    <p>Copyright &copy;okome-okazu All Rights Reserved</p>
+    </footer>
+</div>
+</body>
+</html>
