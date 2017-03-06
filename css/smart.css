@@ -15,6 +15,12 @@ img {
 	height: auto;
 	width:auto;
 	margin: 0 auto;
+	/* 20170303 nsato start */
+	background-image:url(../img/riceball.png),url(../img/wrapper_background_image.jpg);
+	background-position:left 20px bottom 20px,0% 100%;
+	background-repeat:no-repeat, no-repeat;
+	background-size:20%, 100%;
+	/* 20170303 nsato end */
 }
 
 .indent-1 span{
@@ -397,16 +403,114 @@ p{
 #ranking{
 	position:static;
 	display:block;
+	/* 20170303 nsato start */
+	background-image:url(../img/ranking_background_bottom.jpg), url(../img/ranking_background_top_sm.jpg);
+	background-repeat:no-repeat, no-repeat;
+	background-position:left bottom, left top;
+	background-size:100%, 100%;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:0px;
+	padding-bottom:20px;
+	/* 20170303 nsato end */
 }
 #rankingtop {
 	position:static;
 	display:block;
 	width: 100%;
+	/* 20170303 nsato start */
+	background-image:url(../img/ranking_title_sm.png);
+	background-size:cover;
+	/* 20170303 nsato end */
 }
-#ranking1{
-	padding:5% 0 10%;
 
+/* 20170303 nsato start */
+#rankingtop:before {
+	content:"";
+	display:block;
+	padding-top:35%;
 }
+#ranking_title {
+	/*
+	width:100%;
+ 	height:auto;
+	display:block;
+	margin:0px;
+	text-indent:-100em;
+	overflow:hidden;
+	*/
+	display:none;
+}
+.ranking_contents_odd, .ranking_contents_even {
+	background-color:#FFF;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:25%;
+	padding-bottom:20px;
+}
+.ranking_contents {
+	background-size:20%;
+	background-repeat:no-repeat;
+	padding-left:25%;
+}
+
+.ranking_contents h2 {
+	color:#64523A;
+	line-height:110%;
+	margin-bottom:10px;
+	padding-left:0px;
+	font-size:30px;
+	text-shadow:
+		1px 1px 3px rgba(255,255,255,1),
+		-1px -1px 3px rgba(255,255,255,1);
+}
+
+.ranking_contents p {
+	font-size:20px;
+}
+
+.ranking_list {
+	background-position:0% 50%;
+	background-repeat:no-repeat;
+	line-height:25px;
+	padding-left:20px;
+}
+
+.list_1 {
+	background-image:url(../img/rice_1.gif);
+}
+
+.list_2 {
+	background-image:url(../img/rice_2.gif);
+}
+
+.list_3 {
+	background-image:url(../img/rice_3.gif);
+}
+
+.price {
+	color:#990000;
+	font-weight:bold;
+	margin-top:5px;
+}
+
+.ranking_buy {
+	text-align:center;
+}
+/* 20170303 nsato end */
+
+
+#ranking1{
+	/* 20170303 nsato start */
+	/*padding:5% 0 10%;*/
+	background-image:url(../img/ranking1_background_sm.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	/* 20170303 nsato end */
+}
+
+/* 20170303 nsato start */
+/*
 #ranking1 img{
 	position:static;
 	display:inline-block;
@@ -445,10 +549,22 @@ ul.ranking1{
     font-size: 95%;
 	margin:0 auto;
 }
-
-#ranking2{
-	padding:5% 0 10%;
+*/
+#ranking1 .ranking_contents {
+	background-image:url(../img/ranking_stamp_1.png);
 }
+/* 20170303 nsato end */
+#ranking2{
+	/* 20170303 nsato start */
+	/*padding:5% 0 10%;*/
+	background-image:url(../img/ranking2_background_sm.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	/* 20170303 nsato end */
+}
+
+/* 20170303 nsato start */
+/*
 #ranking2 img{
 	position:static;
 	display:inline-block;
@@ -487,10 +603,23 @@ ul.ranking2{
     width: 90%;
 	margin:0 auto;
 }
+*/
+#ranking2 .ranking_contents {
+	background-image:url(../img/ranking_stamp_2.png);
+}
+/* 20170303 nsato end */
 
 #ranking3{
-	padding:5% 0 10%;
+	/* 20170303 nsato start */
+	/*padding:5% 0 10%;*/
+	background-image:url(../img/ranking3_background_sm.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	/* 20170303 nsato end */
 }
+
+/* 20170303 nsato start */
+/*
 #ranking3 img{
 	position:static;
 	display:inline-block;
@@ -529,19 +658,33 @@ ul.ranking3{
     width: 90%;
 	margin:0 auto;
 }
-
+*/
+#ranking3 .ranking_contents {
+	background-image:url(../img/ranking_stamp_3.png);
+}
+/* 20170303 nsato end */
 ul   { list-style:none;
 	   padding: 0;
 }
 
 footer{
-	padding:5% 0 2%;
+	/* 20170303 nsato start */
+	/*padding:5% 0 2%;*/
+	padding-left:23%;
+	padding-right:20px;
+	padding-top:10%;
+	padding-bottom:20px;
+	/* 20170303 nsato end */
 }
 
 footer p {
 	position:static;
 	font-size:85%;
-	text-align:center;
+	/* 20170303 nsato start */
+	/*text-align:center;*/
+	text-align:right;
+	clear:both;
+	/* 20170303 nsato end */
 }
 #anchor_link{
 	display: none;
@@ -552,6 +695,29 @@ footer p {
     width: 50px;
 
 }
+/* 20170303 nsato start */
+#footer_menu li { 
+	float:left;
+	display:inline;
+	text-align:left;
+	padding-left:10px;
+	padding-right:10px;
+}
 
+#footer_menu a {
+	color:#000;
+	text-decoration:none;
+}
+
+.footer_menu_even {
+	background-image:url(../img/footer_separate.gif);
+	background-position:0% 50%;
+	background-repeat:no-repeat;
+}
+
+#footer_menu3 {
+	clear:both;
+}
+/* 20170303 nsato end */
 
 }
