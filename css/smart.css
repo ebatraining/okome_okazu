@@ -451,7 +451,10 @@ p{
 .ranking_contents {
 	background-size:20%;
 	background-repeat:no-repeat;
-	padding-left:25%;
+	/* 20170510 nsato start */
+	/*padding-left:25%;*/
+	padding-left:22%;
+	/* 20170510 nsato end */
 }
 
 .ranking_contents h2 {

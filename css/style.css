@@ -101,6 +101,13 @@
     font-family:"arial black", "游明朝", "Yu Mincho", YuMincho, “ヒラギノ明朝 ProN W3”, “Hiragino Mincho ProN”, “メイリオ”, Meiryo, serif;
 }
 
+/* 20170510 nsato start */
+#ranking1, #ranking2 {
+	margin-bottom:20px;
+}
+/* 20170510 nsato end */
+
+
 @media screen and (min-width: 768px){
 body{
 	width: 100%;
@@ -563,6 +570,7 @@ p{
 	text-indent:-100em;
 	overflow:hidden;
 }
+
 /* 20170303 nsato end */
 
 
