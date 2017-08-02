@@ -56,6 +56,40 @@ img {
   padding-bottom:10%;
 }
 
+	
+.youtube{
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+
+
+#player{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+}
+
+
+#logo{
+	position: absolute;
+	bottom: 6%;
+	left: 32%;
+}
+
+#logo img{
+	width: 58%;
+}
+	
+.test-animation{
+  /* ○秒かけてアニメーションする */
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  /* ○秒待ってからアニメーションする */
+  -webkit-animation-duration: 8s;
+  animation-delay:8s;
+}
 
 #menu01,
 #menu02{

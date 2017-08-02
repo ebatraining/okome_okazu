@@ -1,6 +1,10 @@
 @charset "utf-8";
-
 /* 共通設定 */
+
+.viewer{
+	display: none;
+}
+
 .viewer {
     margin: 0 auto;
     width: 100%;
@@ -107,7 +111,6 @@
 }
 /* 20170510 nsato end */
 
-
 @media screen and (min-width: 768px){
 body{
 	width: 100%;
@@ -118,9 +121,6 @@ body{
 	background-position: 50% 50%;            /* 背景画像の位置は画面中央 */
 	background-attachment:fixed;             /* 背景画像を固定する */
 }
-
-
-
 
 a img {
     border-style:none;
@@ -143,6 +143,40 @@ a img {
 	/* 20170303 nsato end */
 }
 
+.youtube{
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+
+
+#player{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+}
+
+
+#logo{
+	position: absolute;
+	bottom: 20%;
+	left: 32%;
+}
+
+#logo img{
+	width: 66%;
+}
+	
+.test-animation{
+  /* ○秒かけてアニメーションする */
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  /* ○秒待ってからアニメーションする */
+  -webkit-animation-duration: 8s;
+  animation-delay:8s;
+}
+	
 #menu01,
 #menu02{
 	display: box;
