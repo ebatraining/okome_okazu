@@ -87,8 +87,8 @@ img {
   -webkit-animation-duration: 8s;
   animation-duration: 8s;
   /* ○秒待ってからアニメーションする */
-  -webkit-animation-duration: 8s;
-  animation-delay:8s;
+  -webkit-animation-duration: 5s;
+  animation-delay:5s;
 }
 
 #menu01,

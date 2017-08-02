@@ -173,8 +173,8 @@ a img {
   -webkit-animation-duration: 8s;
   animation-duration: 8s;
   /* ○秒待ってからアニメーションする */
-  -webkit-animation-duration: 8s;
-  animation-delay:8s;
+  -webkit-animation-duration: 4s;
+  animation-delay:4s;
 }
 	
 #menu01,
