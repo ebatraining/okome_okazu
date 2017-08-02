@@ -160,12 +160,13 @@ a img {
 
 #logo{
 	position: absolute;
-	bottom: 20%;
+	top: 10%;
 	left: 32%;
+	width: 32%;
 }
 
 #logo img{
-	width: 66%;
+	width: 100%;
 }
 	
 .test-animation{
@@ -173,8 +174,8 @@ a img {
   -webkit-animation-duration: 8s;
   animation-duration: 8s;
   /* ○秒待ってからアニメーションする */
-  -webkit-animation-duration: 4s;
-  animation-delay:4s;
+  -webkit-animation-duration: 6s;
+  animation-delay:6s;
 }
 	
 #menu01,
